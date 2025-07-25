@@ -1,5 +1,5 @@
-# Use a Node.js base image that is Debian 11 (bullseye)
-FROM node:18-slim-bullseye
+# Use a Node.js base image that is Debian 11 (bullseye) LTS
+FROM node:lts-bullseye # <--- CHANGED FROM node:18-slim-bullseye TO node:lts-bullseye
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -30,7 +30,7 @@ RUN npm install --production # Install production dependencies
 COPY . .
 
 # Expose the port your Node.js app runs on
-EXPOSE 5000 
+EXPOSE 5000 # Your Node.js app listens on PORT, which defaults to 5000
 
 # Set environment variables for production
 ENV NODE_ENV=production
