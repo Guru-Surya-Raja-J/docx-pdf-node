@@ -1,5 +1,5 @@
 # Use a Node.js base image that is Debian 11 (bullseye) LTS
-FROM node:lts-bullseye # <--- CHANGED FROM node:18-slim-bullseye TO node:lts-bullseye
+FROM node:lts-bullseye # <--- This line should be clean, no comments on it
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -43,3 +43,4 @@ CMD ["/bin/bash", "-c", " \
     libreoffice --headless --invisible --nocrashreport --nodefault --nofirststartwizard --nologo --norestore & \
     npm start \
 "]
+
