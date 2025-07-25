@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stunning Document Converter</title>
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Google Fonts for Poppins (as in your original UI) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/337/337946.png" type="image/png">
+</head>
+<body>
+    <!-- Background shapes for visual flair (handled by CSS) -->
+    <div class="background-blob-1"></div>
+    <div class="background-blob-2"></div>
+    <div class="background-blob-3"></div>
+    <div class="background-blob-4"></div>
+
+    <div class="container">
+        <h1>DOCX &harr; PDF Converter</h1>
+        <p class="description">Effortlessly convert your documents between Word and PDF formats.</p>
+
+        <div class="conversion-section">
+            <div class="card">
+                <h2>Select File & Convert</h2>
+                <p>Choose your document and hit convert with ease.</p>
+                
+                <!-- Hidden file input -->
+                <input type="file" id="fileInput" accept=".docx" class="file-input">
+                <!-- Custom styled label for file input -->
+                <label for="fileInput" class="custom-file-upload">
+                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path></svg>
+                    Choose File
+                </label>
+                
+                <div class="button-group">
+                    <button id="convertDocxToPdf" class="convert-button" disabled>
+                        Convert DOCX to PDF
+                    </button>
+                </div>
+                
+                <div class="status-message" id="statusMsg"></div>
+                <a id="downloadLink" class="download-link" style="display: none;">
+                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    Download Converted File
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
