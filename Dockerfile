@@ -42,4 +42,6 @@ CMD ["/bin/bash", "-c", " \
     export DISPLAY=:99 && \
     libreoffice --headless --invisible --nocrashreport --nodefault --nofirststartwizard --nologo --norestore & \
     npm start \
-"]
+"] 
+
+
