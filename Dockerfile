@@ -43,4 +43,3 @@ CMD ["/bin/bash", "-c", " \
     libreoffice --headless --invisible --nocrashreport --nodefault --nofirststartwizard --nologo --norestore & \
     npm start \
 "]
-
